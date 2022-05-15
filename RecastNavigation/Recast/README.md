@@ -29,3 +29,8 @@
 二、标记可行走区域并光栅化（体素化）三角形
 
 这里会用到之前的`walkableSlopeAngle`参数，并输入mesh的所有三角形，然后计算每个三角形的法线，并且法线与Up的夹角小于这个角度，就标记为``RC_WALKABLE_AREA``，如果大于这个角度就不标记。
+
+`dividePoly`函数
+![divePoly](imgs/dividePoly.png)
+
+![](imgs/1652592620941.png)
