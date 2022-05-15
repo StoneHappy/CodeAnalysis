@@ -35,3 +35,19 @@
 ![divePoly](imgs/dividePoly.png)
 
 ![divePolys](imgs/dividePolys.jpg)
+
+
+`rasterizeTri`函数
+
+![divePolys](imgs/recastTri1.png)
+
+第一步，用平行于z轴（从最小平面往最大平面前进一个cellsize）的平面切三角形
+
+然后得到小的三角形
+
+然后小三角形x轴方向，占及格cell，然后以同样的方法，沿着x轴方向从minx到maxx按照同样的方法去切小三角形。
+
+
+![divePolys](imgs/recastTri2.png)
+
+没切出一个多边形，就创建一个span
