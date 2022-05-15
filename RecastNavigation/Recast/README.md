@@ -50,4 +50,4 @@
 
 ![divePolys](imgs/recastTri2.png)
 
-没切出一个多边形，就创建一个span
+每切出一个多边形，就根据这个多边形所在的x、y和最大最小高度，就创建一个span
